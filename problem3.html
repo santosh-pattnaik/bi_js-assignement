@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+            body{
+                display:grid ;
+                grid-template-columns: 6fr 6fr;
+            }
+            .tshirt{
+                border: 0.2px ridge grey;
+                width: 400px;
+                height: 500px;
+                margin: 50px 0 0 100px;
+            }
+            .details{
+                margin:20px 150px 0 0;
+            }
+            .radioBtn{
+                margin-left: 50px;
+            }
+            #quantity{
+                margin-left: 70px;
+            }
+
+            #buy{
+                margin-right: 15px;
+                background-color:#2B71F4;
+                color:white;
+                border: none;
+                font-size: 20px;
+                border-radius: 5px;
+            }
+
+            #cart{
+                font-size: 15px;
+                border-radius: 5px;
+                border: 0.2px ridge grey;
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="tshirt"><img src="https://cdn.pixabay.com/photo/2016/11/23/06/57/isolated-t-shirt-1852114_1280.png" alt="tshrit" width="350px"></div>
+    <div class="details">
+        <h3>Product Page</h3>
+        <span>Green Cotton Tshirt</span>
+        <span><p>Shirts</p></span>
+        <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+        </span>
+        <p>Rs. 400 <span style="text-decoration: line-through;">Rs.000 </span> &nbsp;<span style="color: green;">50% Off</span></p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione eos ad iure impedit debitis blanditiis vero deleniti maiores facilis enim dolore, placeat, sint a hic consequuntur porro ut, quam reiciendis.</p>
+        <span style="font-weight: bold;">color</span>
+        <span style="margin-left: 100px;">Green</span><br />
+        <span style="font-weight: bold;">Availability</span>
+        <span style="margin-left: 55px;">3 in stock</span> <br />
+        <br />
+        
+        <span style="font-weight: bold;">Select Size</span>
+            <span class="radioBtn">
+                <label for="radio">
+                <input type="radio">
+                     Small
+                </label>
+                <label for="radio">
+                    <input type="radio" checked>
+                    Medium
+                </label>
+                <label for="radio">
+                    <input type="radio">
+                    Large
+                </label>
+            </span>
+        <br />
+        <br />
+        <span style="font-weight: bold;">Quantity</span>
+        <select name="quantity" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br />
+        <br />
+        <button id="buy">Buy Now</button>
+        <button id="cart">Add To Cart</button>
+
+    </div>
+</body>
+</html>
